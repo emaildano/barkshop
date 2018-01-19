@@ -21,3 +21,6 @@ composer.lock
 # Apollo Config
 wp-config.php
 salts.php
+
+# Plugins
+app/ai1wm-backups
