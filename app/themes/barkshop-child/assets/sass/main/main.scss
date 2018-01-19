@@ -36,3 +36,37 @@
 // Includes all the main Storefront css.
 @import '../storefront/base/base';
 @import '../storefront/base/layout';
+
+// Overrides
+
+.storefront-primary-navigation {
+  .primary-navigation {
+    text-align: center;
+  }
+}
+
+
+@include susy-media($desktop) {
+  .woocommerce-active {
+    .site-header {
+      .secondary-navigation {
+        @include span(12 of 12);
+      }
+
+      .site-search {
+        @include span(last 3 of 12);
+        clear: none;
+      }
+
+      .main-navigation {
+        @include span(12 of 12);
+        clear: both;
+      }
+
+      .site-header-cart {
+        @include span(last 3 of 12);
+        margin-bottom: 0;
+      }
+    }
+  }
+}
